@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 const HeaderDiv = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 22px 30px;
