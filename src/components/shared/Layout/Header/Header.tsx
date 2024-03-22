@@ -3,7 +3,8 @@ import styled from 'styled-components';
 const HeaderDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 24px 30px;
+  padding: 22px 30px;
+  height: 66px;
   background-color: ${({ theme }) => theme.colors.gray900};
 `;
 
@@ -11,7 +12,7 @@ const Title = styled.h1`
   font-size: 20px;
   font-weight: 800;
   color: white;
-  margin-left: 20px;
+  margin-left: 60px;
 `;
 
 const HeaderText = styled.h1`
@@ -31,7 +32,7 @@ const HeaderList = styled.div`
 const Header = () => {
   return (
     <HeaderDiv>
-      <Title>Accelix</Title>
+      <Title>Accelix Games</Title>
       <HeaderList>
         <HeaderText>About</HeaderText>
         <HeaderText>Our Games</HeaderText>

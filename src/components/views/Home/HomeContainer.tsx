@@ -1,20 +1,21 @@
 import styled from 'styled-components';
+import LogoSection from './LogoSection/LogoSection';
+import AboutSection from './AboutSection/AboutSection';
 
-const Button = styled.button`
-  background-color: ${({ theme }) => theme.colors.purple};
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  color: white;
+const HomeWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 `;
+
+// 로고, about, our games
 
 const HomeContainer = () => {
   return (
-    <div>
-      <div>home container2</div>
-      <h1>test</h1>
-      <Button>Click</Button>
-    </div>
+    <HomeWrapper>
+      <LogoSection />
+      <AboutSection />
+    </HomeWrapper>
   );
 };
 
